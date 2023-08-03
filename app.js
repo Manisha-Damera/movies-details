@@ -18,7 +18,7 @@ const initializeDbANdServer = async () => {
     });
 
     app.listen(3000, () => {
-      console.log("Server is running at http://localhost:3000/");
+      console.log("Server is running at http://localhost:3000/movies/");
     });
   } catch (e) {
     console.log(`Error is ${e.message}`);
