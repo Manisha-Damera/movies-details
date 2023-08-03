@@ -1,4 +1,4 @@
-GET http://localhost/3000/movies
+GET http://localhost/3000/movies/
 
 ###
 POST http://localhost/3000/movies/
@@ -9,14 +9,21 @@ Content-Type: application/json
   "leadActor": "Jeff Goldblum"
 }
 ###
-GET http://localhost/3000/movies/46
-
+GET http://localhost/3000/movies/58/
 
 ###
-PUT http://localhost/3000/movies/:movieId/
+PUT http://localhost/3000/movies/58/
 Content-Type: application/json
 {
   "directorId": 24,
   "movieName": "Thor",
   "leadActor": "Christopher Hemsworth"
 }
+###
+DELETE http://localhost/3000/movies/57/
+
+###
+GET http://localhost/3000/directors/
+
+###
+GET http://localhost/3000/directors/2/movies/
